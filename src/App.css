@@ -1,38 +1,114 @@
-.App {
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #50c5b7;
+  color: #fff;
+}
+
+h1 {
+  font-size: 96px;
+  font-family: "sharpsansblack";
+  line-height: 0;
+}
+
+h2 {
+  font-size: 64px;
+  font-family: "sharpsansblack";
+  letter-spacing: 1px;
+  line-height: 60px;
+  margin: 0;
+}
+
+p {
+  font-size: 24px;
+  font-family: "sharpsanssemibold";
+  line-height: 31.56px;
+  margin: 0;
+}
+
+.pageWrapper {
+  width: 100vw;
+  height: 100vh;
+}
+
+.navbar {
+  background: #6184d8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  font-family: "sharpsansbold";
+  font-size: 36px;
+  padding: 26px 40px;
+  height: 75px;
+  margin-bottom: 30px;
+}
+
+.repeatIcon {
+  width: 50px;
+  height: 46.51px;
+  cursor: pointer;
+  transition: 0.7s ease;
+}
+
+.repeatIcon:hover {
+  width: 55px;
+  height: 51.16px;
+}
+
+.main {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.infoBlock {
+  background: #6184d8;
+  width: 60vw;
+  height: 60vh;
+  border-radius: 34px 34px 0 0;
+  text-align: right;
+  transition: 0.7s ease;
+}
+
+.infoWrapper {
+  padding: 0 85px;
+}
+
+.button {
+  width: 60vw;
+  background: #533a71;
+  border-radius: 0 0 34px 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  cursor: pointer;
+  transition: 0.7s ease;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.button:hover {
+  padding: 9px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.buttonTextWrapper {
+  margin: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.purpleDude {
+  width: 150px;
+  margin: -20px 475px -50px -1000px;
 }
 
-.App-link {
-  color: #61dafb;
+.duder {
+  width: 150px;
+  margin: -30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.gDude {
+  width: 260px;
+  margin: -150px 450px -100px -100px;
 }
