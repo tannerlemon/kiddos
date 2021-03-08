@@ -1,10 +1,7 @@
 import React from "react";
 import "../App.css";
-import redDude from "../imgs/Happy Bunch Standing-1.png";
-import purpleDude from "../imgs/Happy Bunch Sitting.png";
-import greenDude from "../imgs/Happy Bunch Standing.png";
-import { Link, Switch, Route, withRouter } from "react-router-dom";
-import Time from "../components/Time";
+
+import { Link } from "react-router-dom";
 
 export default function Welcome() {
   return (

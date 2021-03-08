@@ -1,7 +1,7 @@
 import "./App.css";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import repeatIcon from "./imgs/repeat.png";
-import { Link, Switch, Route } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 import Time from "./components/Time";
 import Welcome from "./components/Welcome";
 import Mess from "./components/Mess";
@@ -14,7 +14,7 @@ function App() {
     <div className="pageWrapper">
       <div className="navbar">
         <div>nannyBot</div>
-        <img className="repeatIcon" src={repeatIcon} />
+        <img alt="repeat icon" className="repeatIcon" src={repeatIcon} />
       </div>
       <div className="main">
         <Switch>

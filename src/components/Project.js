@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./Project.css";
 import { useTimer } from "react-timer-hook";
 import robots from "../imgs/robots.png";
@@ -8,7 +7,7 @@ import spinner from "../imgs/space-spinner.png";
 
 export default function Project() {
   function Timer({ expiryTimestamp }) {
-    const { seconds, minutes, hours, start, pause, restart } = useTimer({
+    const { seconds, minutes, start, pause, restart } = useTimer({
       expiryTimestamp,
       onExpire: () => console.warn("onExpire called"),
     });
@@ -60,7 +59,7 @@ export default function Project() {
         <div className="blueContainer spacebar">
           <div className="space">
             <div className="spinnerIcon">
-              <img src={spinner} />
+              <img alt="spinner icon" src={spinner} />
             </div>
             <p>spacebar</p>
           </div>
@@ -68,7 +67,7 @@ export default function Project() {
       </div>
       <div className="projectContainer">
         <div className="robots">
-          <img src={robots} />
+          <img alt="robot illustration" src={robots} />
           <div className="description">
             <h1>build a robot</h1>
             <p>
@@ -82,7 +81,7 @@ export default function Project() {
               <p>build a base — something that stands up by itself</p>
             </div>
             <div className="shapes">
-              <img src={shapes} />
+              <img alt="base examples" src={shapes} />
             </div>
           </div>
           <p>by taNr leMn.</p>

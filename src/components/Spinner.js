@@ -1,7 +1,6 @@
 import React from "react";
 import "../yesNo.scss";
 import { Link } from "react-router-dom";
-import spinnerImg from "../imgs/spinner.png";
 
 export default function Spinner() {
   return (

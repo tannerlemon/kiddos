@@ -83,7 +83,7 @@ export default function Search() {
             {!showHeader &&
               data.map((material) => (
                 <div className="listItem">
-                  <img className="add" src={addIcon} />
+                  <img alt="add icon" className="add" src={addIcon} />
                   <li>{material}</li>
                 </div>
               ))}
