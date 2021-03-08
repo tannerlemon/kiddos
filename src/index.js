@@ -6,10 +6,13 @@ import reportWebVitals from "./reportWebVitals";
 import "./fonts/SharpSans/SharpSansDispNo1-Semibold.otf";
 import "./fonts/SharpSans/SharpSansDispNo1-Bold.otf";
 import "./fonts/SharpSans/SharpSansDispNo1-Black.otf";
+import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById("root")
 );

@@ -1,0 +1,48 @@
+// Style
+
+.cd-switch {
+  text-align: center;
+}
+
+.label {
+  cursor: pointer;
+  text-transform: lowercase;
+  border: 7px solid #fff;
+  width: 20vw;
+  height: 7vw;
+  padding: 2vw 0;
+  text-align: center;
+  display: inline-block;
+  margin-right: 1vw;
+  border-radius: 10vw;
+  font-size: 5vw;
+}
+
+.switch {
+  display: inline-block;
+  z-index: 1;
+  display: flex;
+  flex-flow: row nowrap;
+
+  input[type="radio"] {
+    visibility: hidden;
+    position: absolute;
+    height: 100%;
+
+    &#yes:checked {
+      ~ label[for="yes"] {
+        color: white;
+        border: 7px solid #8bd252;
+        background: #8bd252;
+      }
+    }
+
+    &#no:checked {
+      ~ label[for="no"] {
+        color: white;
+        border: 7px solid #8bd252;
+        background: #8bd252;
+      }
+    }
+  }
+}

@@ -1,7 +1,12 @@
 import "./App.css";
 import React, { useEffect, useState } from "react";
 import repeatIcon from "./imgs/repeat.png";
+import { Link, Switch, Route } from "react-router-dom";
+import Time from "./components/Time";
 import Welcome from "./components/Welcome";
+import Mess from "./components/Mess";
+import Search from "./components/Search";
+import Spinner from "./components/Spinner";
 
 function App() {
   return (
@@ -11,7 +16,14 @@ function App() {
         <img className="repeatIcon" src={repeatIcon} />
       </div>
       <div className="main">
-        <Welcome />
+        <Switch>
+          <Route exact path="/" component={Welcome} />
+          <Route exact path="/time" component={Time} />
+          <Route exact path="/mess" component={Mess} />
+          <Route exact path="/search" component={Search} />
+          <Route exact path="/spinner" component={Spinner} />
+          <Route>{"404"}</Route>
+        </Switch>
       </div>
     </div>
   );
