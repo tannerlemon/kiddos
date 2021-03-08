@@ -3,7 +3,7 @@ import "../yesNo.scss";
 import { Link } from "react-router-dom";
 import spinnerImg from "../imgs/spinner.png";
 
-export default function Mess() {
+export default function Spinner() {
   return (
     <>
       <div className="infoBlock">

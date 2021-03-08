@@ -7,6 +7,7 @@ import Welcome from "./components/Welcome";
 import Mess from "./components/Mess";
 import Search from "./components/Search";
 import Spinner from "./components/Spinner";
+import Project from "./components/Project";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route exact path="/mess" component={Mess} />
           <Route exact path="/search" component={Search} />
           <Route exact path="/spinner" component={Spinner} />
+          <Route exact path="/project" component={Project} />
           <Route>{"404"}</Route>
         </Switch>
       </div>

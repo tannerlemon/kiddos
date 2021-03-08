@@ -1,0 +1,102 @@
+.projectWrapper {
+  width: 100vw;
+  min-height: 100%;
+  display: flex;
+}
+
+.sidebar {
+  min-height: 87vh;
+  width: 24vw;
+  background: #533a71;
+  border-radius: 0px 34px 34px 0px;
+}
+
+.blueContainer {
+  background: #6184d8;
+  border-radius: 34px;
+  margin: 5%;
+  text-align: right;
+}
+
+.timer {
+  text-align: right;
+  padding: 8%;
+}
+
+.timerNumbers {
+  font-size: 6vw;
+  font-family: "sharpsansblack";
+}
+
+button {
+  border: 3px solid #fff;
+  padding: 7%;
+  border-radius: 34px;
+  margin-left: 3%;
+  margin-bottom: 3%;
+  font-family: "sharpsanssemibold";
+  color: #fff;
+  cursor: pointer;
+  background: transparent;
+  transition: 0.7s ease;
+  font-size: 0.7vw;
+}
+
+button:hover {
+  padding: 8%;
+  background: #533a71;
+  border: 3px solid #533a71;
+}
+
+button:focus {
+  outline: none;
+}
+
+.projectContainer {
+  height: 87vh;
+  overflow: scroll;
+}
+
+.robots {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 10%;
+  text-align: right;
+}
+
+.description {
+  margin-top: 10%;
+}
+
+.steps {
+  text-align: left;
+  margin-top: 10%;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 50%;
+}
+
+.shapes {
+  width: 50%;
+}
+
+.materials {
+  padding: 8%;
+}
+
+.messOrNah {
+  padding: 8%;
+}
+
+.spinnerIcon {
+  width: 10%;
+  margin-right: 5%;
+}
+
+.space {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3%;
+  cursor: pointer;
+}

@@ -58,10 +58,6 @@ export default function Search() {
 
     setShowHeader(false);
   };
-  const added = [];
-  const addData = (item) => {
-    added.push(item);
-  };
 
   const [showHeader, setShowHeader] = useState(true);
 
@@ -85,14 +81,12 @@ export default function Search() {
           </div>
           <div className="listWrapper">
             {!showHeader &&
-              data
-                .filter((material) => !added.includes(material))
-                .map((material) => (
-                  <div onClick={addData(material)} className="listItem">
-                    <img className="add" src={addIcon} />
-                    <li>{material}</li>
-                  </div>
-                ))}
+              data.map((material) => (
+                <div className="listItem">
+                  <img className="add" src={addIcon} />
+                  <li>{material}</li>
+                </div>
+              ))}
           </div>
         </div>
       </div>
